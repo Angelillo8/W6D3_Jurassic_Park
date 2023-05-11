@@ -65,7 +65,7 @@ Park.prototype.removeDinosaurBySpecies = function (speciesToDelete) {
     newDinosaurArray = this.collectionOfDinosaurs.filter( function (dinosaur){
         return dinosaur.species !== speciesToDelete
     }); // Another way of doing it doon below.
-    // for (dinosaur of this.collectionOfDinosaurs) {
+    // for (const dinosaur of this.collectionOfDinosaurs) {
     //     if (dinosaur.species !== speciesToDelete) {
     //         newDinosaurArray.push(dinosaur)
     //     }

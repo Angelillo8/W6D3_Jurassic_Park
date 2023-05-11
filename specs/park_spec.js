@@ -5,9 +5,23 @@ const Dinosaur = require('../models/dinosaur.js');
 describe('Park', function () {
 
   let park;
+  let dinosaur1;
+  let dinosaur2;
+  let dinosaur3;
+  let dinosaur4;
+  let dinosaur5;
+  let dinosaur6;
+  let dinosaur7;
 
   beforeEach(function () {
     park = new Park('Parque Jurasico de comarca de la Cepeda', 35)
+    dinosaur1 = new Dinosaur("Brachiosaurus", "Herbivorous", 50);
+    dinosaur2 = new Dinosaur("Velociraptor", "Carnivorous", 150);
+    dinosaur3 = new Dinosaur("Spinosaurus", "Carnivorous", 60);
+    dinosaur4 = new Dinosaur("Triceratops", "Herbivorous", 100);
+    dinosaur5 = new Dinosaur("Coloradisaurus", "Omnivorous", 120);
+    dinosaur6 = new Dinosaur("Velociraptor", "Carnivorous", 130);
+    dinosaur7 = new Dinosaur("Velociraptor", "Carnivorous", 90);
   });
 
   it('should have a name', function () {
@@ -23,24 +37,6 @@ describe('Park', function () {
   it('should have a collection of dinosaurs', function () {
     const actual = park.numberOfDinosaurs();
     assert.strictEqual(actual, 0);
-  });
-
-  let dinosaur1;
-  let dinosaur2;
-  let dinosaur3;
-  let dinosaur4;
-  let dinosaur5;
-  let dinosaur6;
-  let dinosaur7;
-
-  beforeEach(function () {
-    dinosaur1 = new Dinosaur("Brachiosaurus", "Herbivorous", 50);
-    dinosaur2 = new Dinosaur("Velociraptor", "Carnivorous", 150);
-    dinosaur3 = new Dinosaur("Spinosaurus", "Carnivorous", 60);
-    dinosaur4 = new Dinosaur("Triceratops", "Herbivorous", 100);
-    dinosaur5 = new Dinosaur("Coloradisaurus", "Omnivorous", 120);
-    dinosaur6 = new Dinosaur("Velociraptor", "Carnivorous", 130);
-    dinosaur7 = new Dinosaur("Velociraptor", "Carnivorous", 90);
   });
 
   it('should be able to add a dinosaur to its collection', function () {
