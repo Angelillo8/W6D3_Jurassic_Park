@@ -85,38 +85,3 @@ Park.prototype.countDinosaursByDiet = function () {
 };
 
 module.exports = Park;
-
-// BORRALO DESPUES
-const Dinosaur = require('../models/dinosaur.js');
-const park = new Park('Parque Jurasico de comarca de la Cepeda', 35)
-
-const dinosaur1 = new Dinosaur("Brachiosaurus", "Herbivorous", 50)
-const dinosaur2 = new Dinosaur("Velociraptor", "Carnivorous", 150)
-const dinosaur3 = new Dinosaur("Spinosaurus", "Carnivorous", 60)
-const dinosaur4 = new Dinosaur("Triceratops", "Herbivorous", 100)
-const dinosaur5 = new Dinosaur("Coloradisaurus", "Omnivorous", 120)
-const dinosaur6 = new Dinosaur("Velociraptor", "Carnivorous", 130)
-const dinosaur7 = new Dinosaur("Velociraptor", "Carnivorous", 90)
-
-park.addDinosaur(dinosaur1);
-park.addDinosaur(dinosaur2);
-park.addDinosaur(dinosaur3);
-park.addDinosaur(dinosaur4);
-park.addDinosaur(dinosaur5);
-park.addDinosaur(dinosaur6);
-park.addDinosaur(dinosaur7);
-
-
-
-// console.log(park.collectionOfDinosaurs)
-
-// park.collectionOfDinosaurs = park.collectionOfDinosaurs.filter( function (dinosaur){
-//     return dinosaur.species !== 'Carnivorous'
-// })
-
-
-// console.log(park.collectionOfDinosaurs)
-
-// park.removeDinosaurBySpecies("Velociraptor")
-
-// console.log(park.collectionOfDinosaurs)
